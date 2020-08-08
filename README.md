@@ -74,4 +74,81 @@ public class DemoScript : MonoBehaviour
 
 ---
 
+## using Scripting Reference
 
+- if v declare a public variable in script, it is accessible with in the unity editor, while private varibles r not accessible in unity
+
+
+## Types
+
+- Camera, Light, Sphere all r types.
+
+
+### functions
+ 1. Awake()
+    - will be called before Start() - will not be called  if game object is inactive.
+ 2. Update()
+ 3. Start()
+ 4. LateUpate() - called at the end of the frame 
+
+
+**DemoScript.cs**
+
+```C#
+public class DemoScript : MonoBehaviour
+{
+    // create a Light variable
+    public Light myLight;
+    private Light myNewLight; 
+
+    // will be called at the begining 
+    void Awake()
+    {
+        // returned value is stored in myValue variable
+        int myValue = AddTwo(10, 30);
+        string name = Addnames("jissmon", "jose");
+        // log the value
+        Debug.Log($"our value is {myValue}, name is {name}");
+    }
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKey("space"))
+        {
+            // if v press spacebar, light glows 
+            myLight.enabled = !myLight.enabled;
+        }
+    } 
+
+    void ChangeLight()
+    {
+        if (Input.GetKey("space"))
+        {
+            // if v press spacebar, light glows 
+            myLight.enabled = !myLight.enabled;
+        }
+    }
+
+    public int AddTwo(int a, int b)
+    {
+        return a + b;
+    }
+
+    public string Addnames(string firstname, string lastname)
+    {
+        var fullName = string.Concat(firstname, ' ', lastname);
+        return fullName;
+    }
+}
+
+```
+- time(38:30)
+
+---
