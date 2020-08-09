@@ -33,3 +33,13 @@
 
 
 ## Cross Product
+- when v cross the Vector A and Vector B, we gets a new vector C which is perpendicular to both.
+
+![image](./screenshots/cross.png 'image')
+
+- Unity provides a function to calculate cross product of 2 vectors.
+
+![image](./screenshots/crossformula.png 'image')
+
+
+---
