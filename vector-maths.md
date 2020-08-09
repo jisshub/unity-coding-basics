@@ -22,7 +22,7 @@
 
 ### 3d vector magnitude
 
-![image](./screenshots/3d.png 'image')
+![image](./screenshots/3dvectormagnitude.png 'image')
 
 ### dotproduct
 ![image](./screenshots/dotproduct.png 'image')
