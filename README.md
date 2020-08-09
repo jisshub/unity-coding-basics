@@ -152,3 +152,48 @@ public class DemoScript : MonoBehaviour
 - time(38:30)
 
 ---
+
+## Classes
+
+- collection of variables ad functions.
+
+**DemoScript.cs**
+```C#
+[System.Serializable]
+// System.Serializable is required to show the Class in inspector window of Unity.
+public class Student
+{
+    public int rollNo;
+    public string studentName;
+}
+
+// can create an instance of this Student class
+public Student stdOne;
+```
+
+- using custom script
+
+**UtitliScript.cs**
+
+```C#
+
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+[System.Serializable]
+public class AnotherDataClass
+{
+    public string name;
+    public Color color;
+    public GameObject gameObject;
+};
+
+```
+
+*DemoScript.cs**
+```C#
+public AnotherDataClass anotherDataClasses;
+```
+
