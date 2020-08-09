@@ -60,3 +60,8 @@ public class AwakStart : MonoBehaviour
 
 ### dotproduct
 [!image](./screenshots/dotproduct 'image')
+
+- Unity provides a function to find the vector calculations
+
+[!image](./screenshots/vectcalc 'image')
+
