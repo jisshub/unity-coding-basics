@@ -10,7 +10,7 @@ public class ActiveDeactive : MonoBehaviour
 
         // create a game object
     public GameObject gameObject;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +25,7 @@ public class ActiveDeactive : MonoBehaviour
 
 - we can also deactivate a specific child object under a parent object. by providing the game object in the GameObject field.
 
-![image](./screenshots/avtivate.png 'image') 
+![image](./screenshots/activate.png 'image') 
 
 - here v setActive false to Capsule child object in TestObject parent object.
 
